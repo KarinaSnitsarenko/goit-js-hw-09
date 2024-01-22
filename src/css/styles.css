@@ -109,7 +109,7 @@ body {
   border: 1px solid #808080;
 }
 
-.btn {
+.btn-sub {
   display: flex;
   padding: 8px 16px;
   justify-content: center;
@@ -124,6 +124,6 @@ body {
   letter-spacing: 0.04em;
 }
 
-.btn:hover {
+.btn-sub:hover {
   background: #6C8CFF;
-} 
+}
