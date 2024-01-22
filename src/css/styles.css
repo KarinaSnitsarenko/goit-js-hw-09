@@ -5,8 +5,6 @@
   |============================
 */
 @import url('./reset.css');
-/* @import url('./vite-promo.css');
-@import url('./header.css'); */
 
 
 
@@ -64,7 +62,7 @@ body {
   background: #FFF;
 }
 
-.feedback-imput{
+.email-form{
   display: flex;
   flex-direction: column;
   margin-top: 8px;
@@ -80,15 +78,15 @@ body {
   border: 1px solid #808080;
 }
 
-.feedback-imput:hover {
+.email-form:hover {
   border: 1px solid #000;
 }
 
-.feedback-imput:active {
+.email-form:active {
   border: 1px solid #808080;
 }
 
-.feedback-textarea {
+.message-form {
   display: flex;
   flex-direction: column;
   margin-top: 8px;
@@ -103,15 +101,15 @@ body {
   border: 1px solid #808080;
 }
 
-.feedback-textarea:hover {
+.message-form:hover {
   border: 1px solid #000;
 }
 
-.feedback-textarea:active {
+.message-form:active {
   border: 1px solid #808080;
 }
 
-.feedback-btn{
+.btn {
   display: flex;
   padding: 8px 16px;
   justify-content: center;
@@ -126,6 +124,6 @@ body {
   letter-spacing: 0.04em;
 }
 
-.feedback-btn:hover{
+.btn:hover {
   background: #6C8CFF;
-}
+} 
