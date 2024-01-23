@@ -1,6 +1,9 @@
 const formRef = document.querySelector('.feedback-form');
 formRef.addEventListener('input', onFormInput);
+formRef.addEventListener('submit', onSubmitForm);
+
 const formData = { email: '', message: '' };
+
 function onFormInput({ target: { name, value } }) {
   formData[name] = value.trim();
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
@@ -18,11 +21,15 @@ function onLoadPage() {
 
 function onSubmitForm(event) {
   event.preventDefault();
+
+  if (!formData.email || !formData.message) {
+    console.log('Please fill in all fields.');
+    return;
+  }
   console.log({ email: formData.email, message: formData.message });
-  if (!formData.email || !formData.message) return;
+
   localStorage.removeItem('feedback-form-state');
-  formRef.elements.email.value = '';
-  formRef.elements.message.value = '';
+  formRef.reset();
 }
 
 onLoadPage();
